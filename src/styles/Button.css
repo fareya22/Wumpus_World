@@ -1,0 +1,64 @@
+.custom-btn {
+    margin-top: 1rem;
+    align-items: center;
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: inline-flex; /* Keeps text in one line */
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    min-width: 20px; /* Ensures enough width for button text */
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+.custom-btn:active:after {
+    transform: translate(0, 0);
+}
+
+.custom-btn:hover {
+    background-color: bisque;
+}
+
+.custom-btn:active {
+    background-color: #ffdeda;
+    outline: 0;
+}
+
+.custom-btn:hover {
+    outline: 0;
+}
+
+/* Container for the buttons */
+.button-container {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 1rem; /* Add spacing between buttons */
+    margin-right: 20px; /* Add spacing between buttons and the board */
+}
+
+/* Parent container for the left section and board */
+.game-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Align buttons to the top of the board */
+    gap: 0rem; /* Space between buttons and the board */
+}
+
+@media (min-width: 768px) {
+    .custom-btn {
+        padding: 0 40px;
+    }
+}

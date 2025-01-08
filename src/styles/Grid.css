@@ -1,0 +1,225 @@
+.game-board {
+    display: grid;
+    grid-template-rows: repeat(10, 65px);
+    grid-template-columns: repeat(10, 65px);
+    gap: 2px;
+    /* border: 2px solid blue; */
+    height: 80vh;
+    padding: 1rem;
+    justify-content: right;
+    padding-right: 5rem;
+    /* height: 70vh; */
+}
+
+.cheat-board {
+    display: flex;
+    flex-direction: row;
+}
+
+.pit-board {
+    display: grid;
+    grid-template-rows: repeat(10, 45px);
+    grid-template-columns: repeat(10, 45px);
+    justify-content: center;
+    column-gap: auto;
+    gap: 5px;
+    flex: 5;
+}
+
+.wumpus-board {
+    display: grid;
+    grid-template-rows: repeat(10, 45px);
+    grid-template-columns: repeat(10, 45px);
+    justify-content: center;
+    column-gap: auto;
+    gap: 5px;
+    flex: 5;
+}
+
+.game-container {
+    display: flex;
+    /* width: 50vw; */
+}
+
+.left-container {
+    display: flex;
+    width: 0%;
+    flex-direction: column;
+    justify-content: left;
+    /* align-items: start; */
+}
+
+.valueCover {
+    /* border: 3px dashed blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .1rem;
+    margin-left: 1rem;
+}
+
+.inputSection {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    /* border: 2px dashed blue; */
+    padding-right: 1.5rem;
+    margin: 0 6rem;
+}
+
+.grid-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.wumpus-board-heading,
+.pit-board-heading {
+    font-size: 1.3rem;
+    /* margin: .5rem; */
+    font-weight: bold;
+}
+
+.left-upper-container {
+    /* border: 2px solid green; */
+    width: 100%;
+    /* margin: 1rem; */
+    flex: 9;
+    /* Takes 80% of the available vertical space */
+}
+
+.left-bottom-container {
+    /* border: 2.5px dotted darkorchid; */
+    width: 80%;
+    margin-left: 1.5rem;
+    /* margin-top: 1rem; */
+    flex: 1;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0.1rem;
+    /* margin-top: 0.5rem; */
+    display: flex;
+    justify-content: left;
+}
+
+
+.right-container {
+    /* border: 2px solid blue; */
+    /* margin-top: 1rem; */
+    flex: 4;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    /* width: 80vw; */
+}
+
+.cheatBtn {
+    width: 8rem;
+    height: 2rem;
+    margin-top: .6rem;
+    margin-right: .5rem;
+}
+
+.playBtnSection {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    gap: .8rem;
+    width: 40%;
+    /* margin: 1rem 0; */
+}
+
+.text-area {
+    display: flex;
+    /* border-left: 3px dashed brown; */
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 8rem;
+}
+
+.text-box {
+    /* margin: 0.5rem; */
+    font-size: 1.2rem;
+    /* Decreased font size */
+    padding: 0.7rem;
+    /* Decreased padding */
+    /* background-color: gainsboro; */
+    border-radius: 1rem;
+    /* Decreased border radius */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    height: 1.5rem;
+    /* Let the height adjust to content */
+}
+
+
+
+.upload-group {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    padding: .5rem 1rem;
+    background-color: #FEE6E3;
+    color: black;
+    box-shadow: 5px 5px 0 2px;
+}
+
+
+.gameState {
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 40rem;
+    justify-content: space-around;
+}
+
+.box {
+    border: 2px solid brown;
+    margin: 4px;
+    width: 65px;
+    height: 65px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert-box {
+    display: flex;
+    background-color: rgb(103, 186, 241);
+    padding: 1rem 16rem;
+    border-radius: 2rem;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+.message-box {
+    /* border: 2px solid blue; */
+    padding: 0;
+    justify-content: center;
+    margin-top: .5rem;
+    display: inline-flex; 
+}
+
+
+.cheat-box {
+    border: 2px solid brown;
+    margin: 4px;
+    width: 45px;
+    height: 45px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cheat-cell:hover {
+    background-color: mediumspringgreen;
+}
